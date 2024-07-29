@@ -75,7 +75,9 @@ Subqueries is a query within another query
 
 ```
 SELECT column_name FROM tableA
-WHERE column_name operator ( SELECT column_name from tableName WHERE id = 123; )
+WHERE column_name operator ( SELECT column_name from tableName WHERE id = 123; )   
+
+here the bracket query is the Subquery
 ```
 
 
