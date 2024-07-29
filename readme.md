@@ -46,7 +46,7 @@ DELETE FROM tableName WHERE ID = 123;  ==>> that row will be delete
 ## Advanced SQL Queries
 
 ### 1. JOINS
-
+![Alt Text](joins.png)
 
 
 
