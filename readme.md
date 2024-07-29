@@ -1,5 +1,4 @@
-## Queries for mssql in Azure Data Studio
-
+## Basic SQL Queries
 
 ### 1. create table 
 ```
@@ -17,15 +16,52 @@ CREATE TABLE [dbo].[employee]
 GO
 ```
 
-### 2. Insert data into a table 
+### 2. SELECT ( Read data )
 ```
+SELECT * FROM employee;
+SELECT FROM WHERE ORDER BY GROUP BY HAVIN.G LIMIT
+```
+
+### 3. INSERT 
+```
+INSERT INTO VALUES
+
 INSERT INTO dbo.employee (ID, Name, Type, Profession)
 VALUES 
 (2, 'Shubham', 'Text', 'Writer'),
 (3, 'hublal', 'Text', 'Nothing')
 ```
 
-### 3. Read Query data from a Table
+### 4. UPDATE
 ```
-SELECT * FROM employee;
+UPDATE tableName SET columnNmae = 0;
+UPDATE tableName SET columnNmae = 0 WHERE userID = 123;
 ```
+
+### 5. DELETE
+```
+DELETE FROM tableName WHERE ID = 123;  ==>> that row will be delete 
+```
+
+## Advanced SQL Queries
+
+### 1. JOINS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
