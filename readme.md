@@ -68,6 +68,11 @@ ON tableA.commonColumn = tableB.commonColumn;
 SELECT column_name FROM tableA
 FULL OUTER JOIN tableB
 ON tableA.commonColumn = tableB.commonColumn;
+
+========== SELF JOIN ==========     =>    It is used to comparing values in a column with the same table
+SELECT column_name FROM tableA
+JOIN tableA
+ON tableA.column_name = tableA.column_name;
 ```
 
 ### 2. Subqueries or inner or nested queries
@@ -80,11 +85,42 @@ WHERE column_name operator ( SELECT column_name from tableName WHERE id = 123; )
 here the bracket query is the Subquery
 ```
 
+### 3. CTEs (Common Table Expressions)
+* it helps the query optimization
+* a temporary table stored inside the CTE 
+```
+SELECT column1, column2, ...
+FROM CTE_name
+WHERE condition;
+```
 
+### 4. UNION and UNION ALL
 
+#### UNION
+it is used to combined data from 2 or more tables and it will return the unique data 
+condition ==>
+* same number columns
+* same data type
+* same order
 
+```
+SELECT col_name FROM TabelA
+UNION
+SELECT col_name FROM TabelA
+```
 
+#### UNION ALL
+it is used to combined data from 2 or more tables and it will return the all data along with duplicate
+condition ==>
+* same number columns
+* same data type
+* same order
 
+```
+SELECT col_name FROM TabelA
+UNION ALL
+SELECT col_name FROM TabelA
+```
 
 
 
