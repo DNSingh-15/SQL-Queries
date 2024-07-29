@@ -50,25 +50,49 @@ DELETE FROM tableName WHERE ID = 123;  ==>> that row will be delete
 
 ```
 ========== INNER JOIN ==========
-SELECT tableA.column1, tableA.column2, tableB.column3
-FROM tableA
-INNER JOIN tableB ON tableA.commonColumn = tableB.commonColumn;
+SELECT column_name FROM tableA
+INNER JOIN tableB
+ON tableA.commonColumn = tableB.commonColumn;
 
 ========== LEFT JOIN ==========
-SELECT tableA.column1, tableA.column2, tableB.column3
-FROM tableA
-LEFT JOIN tableB ON tableA.commonColumn = tableB.commonColumn;
+SELECT column_name FROM tableA
+LEFT JOIN tableB
+ON tableA.commonColumn = tableB.commonColumn;
 
 ========== RIGHT JOIN ==========
-SELECT tableA.column1, tableA.column2, tableB.column3
-FROM tableA
-RIGHT JOIN tableB ON tableA.commonColumn = tableB.commonColumn;
+SELECT column_name FROM tableA
+RIGHT JOIN tableB
+ON tableA.commonColumn = tableB.commonColumn;
 
 ========== FULL OUTER JOIN ==========
-SELECT tableA.column1, tableA.column2, tableB.column3
-FROM tableA
-FULL OUTER JOIN tableB ON tableA.commonColumn = tableB.commonColumn;
+SELECT column_name FROM tableA
+FULL OUTER JOIN tableB
+ON tableA.commonColumn = tableB.commonColumn;
 ```
+
+### 2. Subqueries or inner or nested queries
+Subqueries is a query within another query
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
