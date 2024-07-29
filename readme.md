@@ -73,6 +73,10 @@ ON tableA.commonColumn = tableB.commonColumn;
 ### 2. Subqueries or inner or nested queries
 Subqueries is a query within another query
 
+```
+SELECT column_name FROM tableA
+WHERE column_name operator ( SELECT column_name from tableName WHERE id = 123; )
+```
 
 
 
